@@ -46,3 +46,57 @@
     color: #4e4d93;
 }
 
+/* Ноутбуки (меньше 1200px) */
+@media (max-width: 1199px) {
+    .header__nav {
+        padding: 20px 40px;
+    }
+}
+
+/* Планшеты (меньше 992px) */
+@media (max-width: 991px) {
+    .header__nav {
+        padding: 20px 20px;
+    }
+    .header__menu {
+        gap: 15px;
+    }
+}
+
+/* Мобильные в альбомной ориентации (меньше 768px) */
+@media (max-width: 767px) {
+    .header__nav {
+        padding: 15px;
+    }
+    .header__menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .header__top {
+        margin: 0 20px;
+    }
+}
+
+/* Мобильные (меньше 576px) */
+@media (max-width: 575px) {
+    .header__nav {
+        padding: 10px;
+    }
+    .header__menu {
+        gap: 8px;
+    }
+    .header__top {
+        margin: 0 10px;
+    }
+}
+
+/* Очень маленькие экраны (меньше 400px) */
+@media (max-width: 399px) {
+    .header__nav {
+        padding: 10px 5px;
+    }
+    .header__menu {
+        gap: 5px;
+    }
+}

@@ -46,3 +46,77 @@
     color: #FFFFFF;
     margin: 0;
 }
+
+/* Ноутбуки (меньше 1200px) */
+@media (max-width: 1199px) {
+    .hero {
+        padding: 100px 150px;
+    }
+}
+
+/* Планшеты (меньше 992px) */
+@media (max-width: 991px) {
+    .hero {
+        padding: 80px 100px;
+    }
+    .hero__content {
+        padding: 40px;
+    }
+}
+
+/* Мобильные в альбомной ориентации (меньше 768px) */
+@media (max-width: 767px) {
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 60px 50px;
+    }
+    .hero__content {
+        padding: 30px;
+    }
+    .hero__title {
+        font-size: 32px;
+    }
+    .hero__description {
+        font-size: 16px;
+    }
+}
+
+/* Мобильные (меньше 576px) */
+@media (max-width: 575px) {
+    .hero {
+        padding: 40px 20px;
+    }
+    .hero__content {
+        padding: 20px;
+    }
+    .hero__title {
+        font-size: 28px;
+    }
+    .hero__description {
+        font-size: 15px;
+    }
+    .hero__button {
+        padding: 14px 28px;
+        font-size: 15px;
+    }
+}
+
+/* Очень маленькие экраны (меньше 400px) */
+@media (max-width: 399px) {
+    .hero {
+        padding: 30px 15px;
+    }
+    .hero__content {
+        padding: 15px;
+    }
+    .hero__title {
+        font-size: 24px;
+    }
+    .hero__description {
+        font-size: 14px;
+    }
+    .hero__button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
