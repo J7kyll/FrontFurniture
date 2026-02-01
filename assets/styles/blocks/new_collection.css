@@ -45,7 +45,6 @@
 
 .collection-link {
     display: inline-block;
-
     padding: 16px 32px;
     background-color: transparent;
     color: #2a254b;
@@ -62,4 +61,67 @@
 
 .new_collection__button {
     text-align: center; 
+}
+
+/* Ноутбуки (меньше 1200px) */
+@media (max-width: 1199px) {
+    .new_collection {
+        padding: 100px 150px;
+    }
+}
+
+/* Планшеты (меньше 992px) */
+@media (max-width: 991px) {
+    .new_collection {
+        padding: 80px 100px;
+    }
+    .new_collection__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Мобильные в альбомной ориентации (меньше 768px) */
+@media (max-width: 767px) {
+    .new_collection {
+        padding: 60px 50px;
+    }
+    .new_collection__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .new_collection h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+}
+
+/* Мобильные (меньше 576px) */
+@media (max-width: 575px) {
+    .new_collection {
+        padding: 40px 20px;
+    }
+    .new_collection__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .new_collection h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .product-card h3 {
+        font-size: 18px;
+    }
+    .product-card .price {
+        font-size: 16px;
+    }
+}
+
+/* Очень маленькие экраны (меньше 400px) */
+@media (max-width: 399px) {
+    .new_collection {
+        padding: 30px 15px;
+    }
+    .new_collection h2 {
+        font-size: 24px;
+    }
 }

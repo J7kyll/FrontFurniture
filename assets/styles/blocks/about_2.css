@@ -62,3 +62,67 @@
     height: 100%;
     object-fit: cover;
 }
+
+/* Ноутбуки (меньше 1200px) */
+@media (max-width: 1199px) {
+    .about_2__content {
+        padding: 60px 150px;
+    }
+}
+
+/* Планшеты (меньше 992px) */
+@media (max-width: 991px) {
+    .about_2__content {
+        padding: 60px 100px;
+    }
+    .about_2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Мобильные в альбомной ориентации (меньше 768px) */
+@media (max-width: 767px) {
+    .about_2__content {
+        padding: 40px 50px;
+    }
+    .about_2__content h2 {
+        font-size: 32px;
+    }
+    .about_2__content p {
+        font-size: 16px;
+    }
+}
+
+/* Мобильные (меньше 576px) */
+@media (max-width: 575px) {
+    .about_2__content {
+        padding: 30px 20px;
+    }
+    .about_2__content h2 {
+        font-size: 28px;
+    }
+    .about_2__content p {
+        font-size: 15px;
+    }
+    .hero_button {
+        padding: 14px 28px;
+        font-size: 15px;
+    }
+}
+
+/* Очень маленькие экраны (меньше 400px) */
+@media (max-width: 399px) {
+    .about_2__content {
+        padding: 20px 15px;
+    }
+    .about_2__content h2 {
+        font-size: 24px;
+    }
+    .about_2__content p {
+        font-size: 14px;
+    }
+    .hero_button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
