@@ -20,11 +20,18 @@
 <body>
     <header class="header">
         <section class="header__top">
+            <!-- Гамбургер-кнопка для мобильных устройств -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+            </button>
+            
             <a href="#" class="header__link__1">
-                <img src="assets/icons/Search.png" alt="" class="header__icon">
+                <img src="assets/icons/Search.png" alt="Поиск" class="header__icon">
             </a>
             <a href="" class="header__logo">
-                <img src="assets/img/Лого.png" alt="" class="header__logo-image">
+                <img src="assets/img/Лого.png" alt="Логотип Avion" class="header__logo-image">
             </a>
             <div class="header__link__2">
                 <a href="" class="header__link__2">
@@ -36,7 +43,7 @@
             </div>
         </section>
 
-        <nav class="header__nav">
+        <nav class="header__nav" id="mainNav">
             <ul class="header__menu">
                 <li class="header__menu-item">
                     <a href="#plantpots" class="header__menu-link">Горшки</a>
@@ -62,6 +69,9 @@
             </ul>
         </nav>
     </header>
+    
+    <!-- Оверлей для меню (будет создан через JavaScript) -->
+    
     <main>
         <section class="hero">
             <article class="hero__content">
@@ -72,7 +82,7 @@
                     продукции с использованием передовых веб-технологий.</p>
             </article>
             <article class="hero__image">
-                <img src="assets/img/RightImage.png" alt="">
+                <img src="assets/img/RightImage.png" alt="Мебель Avion">
             </article>
         </section>
         <section class="different">
@@ -80,25 +90,25 @@
 
             <div class="different__grid">
                 <article class="feature-item">
-                    <img src="assets/icons/Delivery.png" alt="">
+                    <img src="assets/icons/Delivery.png" alt="Доставка">
                     <h3>Доставка на следующий день по умолчанию</h3>
                     <p>Закажите до 15:00, и ваш заказ будет доставлен на следующий день в стандартном режиме</p>
                 </article>
 
                 <article class="feature-item">
-                    <img src="assets/icons/Checkmark--outline.png" alt="">
+                    <img src="assets/icons/Checkmark--outline.png" alt="Качество">
                     <h3>Создано настоящими мастерами</h3>
                     <p>Изделия ручной работы, созданные с истинной страстью и мастерством</p>
                 </article>
 
                 <article class="feature-item">
-                    <img src="assets/icons/Purchase.png" alt="">
+                    <img src="assets/icons/Purchase.png" alt="Цены">
                     <h3>Непревзойдённые цены</h3>
                     <p>Для наших материалов и качества вы не найдёте цен лучше нигде</p>
                 </article>
 
                 <article class="feature-item">
-                    <img src="assets/icons/Sprout.png" alt="">
+                    <img src="assets/icons/Sprout.png" alt="Экология">
                     <h3>Переработанная упаковка</h3>
                     <p>Мы используем 100% переработанную упаковку, чтобы минимизировать наш экологический след</p>
                 </article>
@@ -109,25 +119,25 @@
 
             <section class="new_collection__grid">
                 <article class="product-card">
-                    <img src="assets/img/Photo.png" alt="">
+                    <img src="assets/img/Photo.png" alt="Кресло Dandy">
                     <h3>Кресло Dandy</h3>
                     <p class="price">34 999 ₽</p>
                 </article>
 
                 <article class="product-card">
-                    <img src="assets/img/Photo1.png" alt="">
+                    <img src="assets/img/Photo1.png" alt="Набор ваз Rustto">
                     <h3>Набор ваз Rustto</h3>
                     <p class="price">19 999 ₽</p>
                 </article>
 
                 <article class="product-card">
-                    <img src="assets/img/Photo2.png" alt="">
+                    <img src="assets/img/Photo2.png" alt="Шёлковая ваза">
                     <h3>Шёлковая ваза</h3>
                     <p class="price">9 999 ₽</p>
                 </article>
 
                 <article class="product-card">
-                    <img src="assets/img/Photo3.png" alt="">
+                    <img src="assets/img/Photo3.png" alt="Лампа Lucy">
                     <h3>Лампа Lucy</h3>
                     <p class="price">45 555 ₽</p>
                 </article>
@@ -142,19 +152,19 @@
 
             <section class="popular_products__grid">
                 <article class="product-card">
-                    <img src="assets/img/Large.png" alt="">
+                    <img src="assets/img/Large.png" alt="Кресло Dandy">
                     <h3>Кресло Dandy</h3>
                     <p class="price">107 666 ₽</p>
                 </article>
 
                 <article class="product-card">
-                    <img src="assets/img/Photo.png" alt="">
+                    <img src="assets/img/Photo.png" alt="Набор ваз Rustto">
                     <h3>Набор ваз Rustto</h3>
                     <p class="price">33 333 ₽</p>
                 </article>
 
                 <article class="product-card">
-                    <img src="assets/img/Photo3.png" alt="">
+                    <img src="assets/img/Photo3.png" alt="Шёлковая ваза">
                     <h3>Шёлковая ваза</h3>
                     <p class="price">22 222 ₽</p>
                 </article>
@@ -187,7 +197,7 @@
                 <a href="#collection" class="hero_button">Связаться с нами</a>
             </article>
             <article class="about_2__image">
-                <img src="assets/img/Image.png" alt="">
+                <img src="assets/img/Image.png" alt="Интерьер магазина Avion">
             </article>
         </section>
     </main>
@@ -241,6 +251,14 @@
 
         <p class="footer__copyright">© 2025 J7kyll</p>
     </footer>
+    
+    <!-- Кнопка "Наверх" -->
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        ↑
+    </button>
+    
+    <!-- Подключаем JavaScript для мобильного меню и кнопки "Наверх" -->
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>
